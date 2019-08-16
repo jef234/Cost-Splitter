@@ -7,8 +7,8 @@ $(document).ready(function () {
             txtTotalPerPerson = document.querySelector("#txtTotalPerPerson");
         if (txtTotalBill.value != "" && txtTipInPercentage.value != "" && txtNumberOfPeople.value != "") {
             txtTipPerPerson.innerHTML = ((+txtTotalBill.value / +txtTipInPercentage.value) / +txtNumberOfPeople.value);
-            txtTotalPerPerson.innerHTML = ((+txtTotalBill.value / +txtNumberOfPeople.value) + +txtTipPerPerson.innerHTML) + "$";
-            txtTipPerPerson.innerHTML += "$";
+            txtTotalPerPerson.innerHTML = ((+txtTotalBill.value / +txtNumberOfPeople.value) + +txtTipPerPerson.innerHTML) + "&#8377";
+            txtTipPerPerson.innerHTML += "&#8377";
         } else {
             txtTipPerPerson.value = "";
             txtTotalPerPerson.value = "";
